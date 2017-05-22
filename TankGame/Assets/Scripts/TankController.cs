@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TankController : MonoBehaviour {
 
+
+	public GameObject Tank;
 	// **Amend to APC parts as needed
 	// Public Floats - Char Move / Aiming
 	public float movementSpeed = 0.2f;
@@ -11,6 +13,7 @@ public class TankController : MonoBehaviour {
 	public float turretRotateSpeed = 2;
 	public float bulletSpeed = 20;
 	public GameObject turret;
+
 
 	// Amend to local controls for Xbone Controller
 	public GameObject bulletPrefab;
@@ -29,6 +32,9 @@ public class TankController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		//Designates Player
+		gameObject.tag = "Player";
 		
 	}
 
